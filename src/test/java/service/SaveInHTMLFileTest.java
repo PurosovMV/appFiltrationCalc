@@ -26,5 +26,4 @@ class SaveInHTMLFileTest {
         File file = new File(filePath);
         file.delete();
     }
-    }
 }

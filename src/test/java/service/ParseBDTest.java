@@ -13,7 +13,7 @@ class ParseBDTest {
         String variableName3 = "variable3";
 
         double result1 = ParseBD.getVariableValue(content, variableName1);
-        assert.Equals(10.5, result1);
+        assertEquals(10.5, result1);
 
     }
 }

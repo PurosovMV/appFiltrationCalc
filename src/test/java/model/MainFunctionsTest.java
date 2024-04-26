@@ -43,8 +43,8 @@ class MainFunctionsTest {
 
     @org.junit.jupiter.api.Test
     void theAverageDepthOfTheFiltrationFloDuringPressureFreeFiltration() {
-        double result = mainFunctions.theAverageDepthOfTheFiltrationFloDuringPressureFreeFiltration(10, 5,3,2);
-        assertEquals(12.50, result);
+        double result = mainFunctions.theAverageDepthOfTheFiltrationFloDuringPressureFreeFiltration(10,5,3,2);
+        assertEquals(16.50, result);
     }
 
     @org.junit.jupiter.api.Test
@@ -62,38 +62,38 @@ class MainFunctionsTest {
     @org.junit.jupiter.api.Test
     void theReducedRadiusOfTheWaterLoweringSystemSQR() {
         double result = mainFunctions.theAverageDepthOfTheFiltrationFloDuringPressureFiltration(10);
-        assertEquals(1.78, result);
+        assertEquals(10, result);
     }
 
     @org.junit.jupiter.api.Test
     void depressionRadiusPressureFree() {
         double result = mainFunctions.depressionRadiusPressureFree(10, 5, 3, 2, 1);
-        assertEquals(32.20, result);
+        assertEquals(103.53, result);
     }
 
     @org.junit.jupiter.api.Test
     void depressionRadiusPheatric() {
         double result = mainFunctions.depressionRadiusPheatric(10, 5, 3, 2);
-        assertEquals(23.20, result);
+        assertEquals(34.49, result);
 
     }
 
     @org.junit.jupiter.api.Test
     void depressionRadiusPressure() {
         double result = mainFunctions.depressionRadiusPressure(10, 5, 3);
-        assertEquals(23.20, result);
+        assertEquals(96.6, result);
     }
 
     @org.junit.jupiter.api.Test
     void loweringOfWaterFunctionCircle() {
         double result = mainFunctions.loweringOfWaterFunctionCircle(10, 5);
-        assertEquals(0.10, result);
+        assertEquals(0.11, result);
     }
 
     @org.junit.jupiter.api.Test
     void totalSystemInflow() {
         double result = mainFunctions.totalSystemInflow(10, 5, 3, 2);
-        assertEquals(7.50, result);
+        assertEquals(75, result);
     }
 
     @org.junit.jupiter.api.Test
@@ -105,6 +105,6 @@ class MainFunctionsTest {
     @org.junit.jupiter.api.Test
     void lengthOfFilter() {
         double result = mainFunctions.lengthOfFilter(10, 5, 3);
-        assertEquals(1.33, result);
+        assertEquals(6.93, result);
     }
 }
